@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in JS</title>
+</head>
+<body>
+    <!-- JS -->
+    <script>
+        var emp={name:'Chandu', age:"23", location:"Nagar Kurnool", email:"cmfriend111@gmail.com"};
+        document.write("name: ",emp["name"],"<br>");    // indexing
+        document.write("name: ",emp.name,"<br>");       // dotnotation
+
+        document.write("name: ",emp["age"],"<br>");
+        document.write("name: ",emp.age,"<br>");
+
+        document.write("name: ",emp["location"],"<br>");
+        document.write("name: ",emp.location,"<br>");
+
+        document.write("name: ",emp["email"],"<br>");
+        document.write("name: ",emp.email,"<br>");
+
+
+
+        document.write("<br>")
+
+
+
+        // objects with functions
+
+        var emp={name:'Chandu', age:"23", location:"Nagar Kurnool", email:"cmfriend111@gmail.com", display:function(){
+            document.write("This is a function written inside the Object");
+        }};
+        document.write("name: ",emp["name"],"<br>");    // indexing
+        document.write("name: ",emp.name,"<br>");       // dot notation
+
+        document.write("name: ",emp["age"],"<br>");
+        document.write("name: ",emp.age,"<br>");
+
+        document.write("name: ",emp["location"],"<br>");
+        document.write("name: ",emp.location,"<br>");
+
+        document.write("name: ",emp["email"],"<br>");
+        document.write("name: ",emp.email,"<br>");
+
+        emp.display()
+
+
+    </script>
+</body>
+</html>

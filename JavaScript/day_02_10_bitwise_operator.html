@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitwise Operator</title>
+</head>
+<body>
+    <!-- JS -->
+    <script>
+        // Bitwise Operator
+        var a=14, b=23;
+        document.write("The result of 'a' ' bitwise and & ' 'b' is: "+(a&b)+"<br>");
+        document.write("The result of 'a' ' bitwise or | ' 'b' is: "+(a|b)+"<br>");
+        document.write("The result of 'a' ' bitwise exclusive ^ ' 'b' is: "+(a^b)+"<br>");
+
+        var result=a<<2;
+        document.write("The value of left-shift 'a' is: "+(result)+"<br>");  // 14*2**2=52
+        var result1=a>>2;
+        document.write("The value of right-shift 'a' is: "+(result1)+"<br>");  // 14/(2**2)=3   only integer is result
+        var result2=~a;
+        document.write("The value of 'ternary a' is: "+(result2)+"<br>");  // -(a+1)=-15
+    </script>
+</body>
+</html>

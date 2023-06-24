@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <!-- JS -->
+
+    <script>
+        // strings
+        let str1='Hello Chandu';
+        document.write(str1,"<br>");
+        document.write("The length of 'str1' is: ",str1.length,"<br>");
+
+        let str2="Chandu Sir";
+        document.write(str2,"<br>");
+        document.write("The length of 'str2' is: ",str2.length+"<br>");
+
+
+        // printing elements in strings using index values
+        document.write(str1[1],"<br>");
+        document.write(str1[4],"<br>");
+        document.write(str1[5],"<br>");
+        document.write(str1[6],"<br>");
+        document.write(str1[8],"<br>");
+        document.write(str1[10],"<br>");
+
+
+        // using while loop printing elements in str1
+        index=0;
+        while(index<str1.length){
+            document.write("str1["+index+"]: "+str1[index]+"<br>");
+            index++;
+        }
+        
+        // using do while loop printing elements in str2
+        index=0;
+        do{
+            document.write("str2["+index+"]: "+str2[index]+"<br>");
+            index++;
+        }while(index<str2.length)
+        
+
+        // using for loop printing elements in str1
+        for(let index=0; index<str1.length;index++){
+            document.write("str1[",index,"]: ",str1[index],"<br>");
+        }
+
+    </script>
+</body>
+</html>
