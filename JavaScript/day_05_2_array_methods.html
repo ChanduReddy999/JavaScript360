@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations on Arrays</title>
+</head>
+<body>
+    <!-- JS -->
+    <script>
+        // Insert into Array at the begining using unshift()
+        // using unshift() we can insert elements at the begining of Array
+        document.write("using unshift operation to insert elements at the beginning of array","<br>");
+
+        var a=[];
+        a.unshift(10);
+        document.write(a,"<br>");       // 10
+        a.unshift(20);
+        document.write(a,"<br>");       // 20,10
+        a.unshift(30);
+        document.write(a,"<br>");       // 30,20,10
+        a.unshift(40);
+        document.write(a,"<br>");       // 40,30,20,10
+        document.write("<br><br>");
+
+
+
+        // Insert into Array at the end using push()
+        // using push() we can insert elements at the end of Array
+        document.write("using push operation to insert elements at the end of array","<br>");
+
+        var b=[];
+        b.push(10);
+        document.write(b,"<br>");       // 10
+        b.push(20);
+        document.write(b,"<br>");       // 10,20
+        b.push(30);
+        document.write(b,"<br>");       // 10,20,30
+        b.push(40);
+        document.write(b,"<br>");       // 10,20,30,40
+        document.write("<br><br>");
+        
+
+
+        // Insert into Array at any position using splice()
+        // using splice we delete and insert into the array at any position
+        // array_name.splice(index,any_element_to_delete_count, elements_for_insert)
+        document.write("using splice operation to inset elements at any position of array","<br>");
+
+        var c=[1,2,3,4,5,6,7,8,9,10];
+        document.write(c,"<br>"); 
+        c.splice(4,1,50);
+        document.write(c,"<br>");
+        c.splice(6,2,70,80);
+        document.write(c,"<br>");
+        c.splice(8,6,100);
+        document.write(c,"<br>");
+        c.splice(1,6,200);
+        document.write(c,"<br>");
+        c.splice(2,1,300,301,302,303,304,305);
+        document.write(c,"<br>");
+        document.write("<br><br>");
+        
+
+
+        // Update array elements using index operation
+        document.write("using index operation to update elements in the array","<br>");
+        d=[1,2,3,4,5,6,7,8,9,10];
+        document.write(d,"<br>"); 
+        d[2]=300;
+        document.write(d,"<br>");
+        d[4]=500;
+        document.write(d,"<br>");
+        d[8]=900;
+        document.write(d,"<br>");
+        document.write("<br><br>");
+
+
+        
+        // Deleting array elements using shift operation from the beginning of Array
+        document.write("using shift operation to delete elements from the beginning of array","<br>");
+        var e=[1,2,3,4,5,6,7,8,9,10];
+        document.write(e,"<br>"); 
+        e.shift();
+        document.write(e,"<br>");  // 2,3,4,5,6,7,8,9,10
+        e.shift();
+        document.write(e,"<br>");  // 3,4,5,6,7,8,9,10
+        e.shift();
+        document.write(e,"<br>");  // 4,5,6,7,8,9,10
+        e.shift();
+        document.write(e,"<br>");  // 5,6,7,8,9,10
+        document.write("<br><br>");
+
+
+
+        // Deleting array elements using pop operation at the end of Array
+        document.write("using pop operation to delete elements at the end of array","<br>");
+        var f=[1,2,3,4,5,6,7,8,9,10];
+        document.write(f,"<br>"); 
+        f.pop();
+        document.write(f,"<br>");  // 1,2,3,4,5,6,7,8,9
+        f.pop();
+        document.write(f,"<br>");  // 1,2,3,4,5,6,7,8
+        f.pop();
+        document.write(f,"<br>");  // 1,2,3,4,5,6,7
+        f.pop();
+        document.write(f,"<br>");  // 1,2,3,4,5,6
+        document.write("<br><br>");
+
+
+        // Deleting array elements using splice operation at any position of Array
+        document.write("using splice operation to delete elements at any position of array","<br>");
+        var g=[1,2,3,4,5,6,7,8,9,10];
+        document.write(g,"<br>"); 
+        g.splice(1,2);
+        document.write(g,"<br>");  // 1,4,5,6,7,8,9,10
+        g.splice(4,4);
+        document.write(g,"<br>");  // 1,4,5,6
+        g.splice(3,4);
+        document.write(g,"<br>");  // 1,4,5
+        document.write("<br><br>");
+
+
+
+        // Retrieving the array elements
+        document.write("we can retrieve array elements using 1. indexing, 2. for loop, while loop, do-while loop, for-in loop, for-of loop, 3. Slicing operation","<br>");
+        h=[1,2,3,4,5,6,7,8,9,10];
+        document.write(h,"<br>");
+        result=h.slice(2);  // 3,4,5,6,7,8,9,10
+        document.write(result,"<br>");
+        result=h.slice(5);  // 6,7,8,9,10
+        document.write(result,"<br>");
+        result=h.slice(8);  // 9,10
+        document.write(result,"<br>");
+        result=h.slice(-4);  // 7,8,9,10
+        document.write(result,"<br>");
+
+        result=h.slice(2,5);  // 3,4,5
+        document.write(result,"<br>");
+        result=h.slice(7,5);  // empty
+        document.write(result,"<br>");
+        result=h.slice(-3,0);  // empty
+        document.write(result,"<br>");
+
+
+        result=h.slice(8,14);  // 9,10
+        document.write(result,"<br>");
+        document.write("<br><br>");
+
+
+
+        // deleting elements in array using length
+        document.write("using length operation to delete elements of array","<br>");
+        var z=[1,2,3,4,5,6,7,8,9,10];
+        document.write(z,"<br>");  // 1,2,3,4,5,6,7,8,9,10
+        z.length=8;
+        document.write(z,"<br>");  // 1,2,3,4,5,6,7,8
+        z.length=6;
+        document.write(z,"<br>");  // 1,2,3,4,5,6
+        z.length=4;
+        document.write(z,"<br>");  // 1,2,3,4
+        z.length=1;
+        document.write(z,"<br>");  // 1
+        document.write("<br><br>");
+
+
+
+        // delete array elements using array indexing
+        document.write("using index number to delete elements of array, it creates holes in the place of deleted elements, the lenght of array never changes while deleting the elements","<br>");
+        var y=[1,2,3,4,5,6,7,8,9,10];
+        document.write(y,"<br>");  // 1,2,3,4,5,6,7,8,9,10
+        document.write("length is: ",y.length,"<br>");
+        delete y[1];
+        document.write(y,"<br>");  // 1,,3,4,5,6,7,8,9,10
+        document.write("length is: ",y.length,"<br>");
+        delete y[3];
+        document.write(y,"<br>");  // 1,,3,,5,6,7,8,9,10
+        document.write("length is: ",y.length,"<br>");
+        delete y[6];
+        document.write(y,"<br>");  // 1,,3,,5,6,,8,9,10
+        document.write("length is: ",y.length,"<br>");
+        document.write("<br><br>");
+
+
+
+        // concatinating two arrays or merging two arrays
+        document.write("concatinating two arrays using concat() method","<br>");
+        var x=[1,2,3,4,5];
+        var w=[6,7,8,9,10];
+        var v=x.concat(w);
+        document.write(v,"<br>");  // 1,2,3,4,5,6,7,8,9,10
+        document.write(x,"<br>");  // 1,2,3,4,5
+        document.write(w,"<br>");  // 6,7,8,9,10
+        var u=[11,12,13,14,15];
+        var t=x.concat(w,u);
+        document.write(t,"<br>");  // 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+        document.write("<br><br>");
+        
+
+
+        // reversing of array
+        document.write("resersing the array using while loop","<br>");
+        var s=[1,2,3,4,5,6,7,8,9,10];
+        end_index=s.length-1;
+        while(end_index>=0){
+            document.write(s[end_index],"<br>");
+            end_index--;
+        }
+        document.write("resersing the array using reverse method","<br>");
+        var s=[1,2,3,4,5,6,7,8,9,10];
+        s=s.reverse();
+        document.write(s,"<br>");
+        document.write("<br><br>");
+
+
+
+        // finding the lenght of array
+        document.write("finding the length of array using for-in loop","<br>");
+        var r=[1,2,3,4,5,6,7,8,9,10];
+        var count=0;
+        for (let i in r){
+            count++;
+        }
+        document.write("The length of array is: ",count,"<br>");
+        
+        document.write("finding the length of array using for-of loop","<br>");
+        var r=[1,2,3,4,5,6,7,8,9,10];
+        var count=0;
+        for (let i of r){
+            count++;
+        }
+        document.write("The length of array is: ",count,"<br>");
+        document.write("<br><br>");
+
+
+
+        // array with join method as separator
+        document.write("array with join method used as separator","<br>");
+        var q=[1,2,3,4,5,6,7,8,9,10];
+        document.write(q.join("==="),"<br>");
+        document.write(q.join("--"),"<br>");
+        document.write(q.join("*"),"<br>");
+        document.write(q.join("/////"),"<br>");
+        document.write("<br><br>");
+        
+
+        document.write("These are the array operations","<br>");
+    </script>
+</body>
+</html>

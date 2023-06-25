@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope in JS</title>
+</head>
+<body>
+    <!-- JS -->
+    <script>
+
+
+        //  ====Block Scope====
+
+        // creating the block with the variable using var keyword
+        // {
+        //     var x=12;
+        //     document.write("here we are displaying 'x' inside the block: ",x,"<br>");
+        // }
+        // document.write("here we are displaying 'x' outside the block: ",x,"<br>");
+        // document.write("here we are displaying 'x' both inside and outside the block scope using var keyword: ",x,"<br>");
+
+
+        // creating the block with the variable using let keyword
+        // {
+        //     let y=123;
+        //     document.write("here we are displaying 'y' inside the block using let keyword: ",y,"<br>");
+        //     document.write("here we cannot display 'y' outside the block using let keyword: ",y,"<br>");
+        // }
+        // document.write("here we are displaying 'y' outside the block using let keyword: ",y,"<br>");
+        
+        
+        
+        // creating the block with the variable using const keyword
+        // {
+        //     const A=1;
+        //     document.write("here we are displaying 'A' inside the block using const keyword: ",A,"<br>");
+        //     document.write("here we cannot display 'A' outside the block using const keyword: ",A,"<br>");
+        // }
+        // document.write("here we are displaying 'A' outside the block using const keyword: ",A,"<br>");
+
+
+
+
+
+
+        //  ====Function Scope====
+
+        // creating the function with variable using var keyword
+        // function display(){
+        //     var b=1234;
+        //     document.write("here we are displaying 'b' inside the function using var keyword: ",b,"<br>");
+        //     document.write("here we cannot display 'b' outside the function using var keyword: ",b,"<br>");
+        // }
+        // display()
+        // document.write("here we are displaying 'b' outside the function using var keyword: ",b,"<br>");
+
+
+        // creating the function with variable using let keyword
+        // function display1(){
+        //     let c=14;
+        //     document.write("here we are displaying 'c' inside the function using let keyword: ",c,"<br>");
+        //     document.write("here we cannot display 'c' outside the function using let keyword: ",c,"<br>");
+        // }
+        // display1()
+        // document.write("here we are displaying 'c' outside the function using let keyword: ",c,"<br>");
+
+
+        // creating the function with variable using const keyword
+        // function display2(){
+        //     let D=143;
+        //     document.write("here we are displaying 'D' inside the function using const keyword: ",D,"<br>");
+        //     document.write("here we cannot display 'D' outside the function using const keyword: ",D,"<br>");
+        // }
+        // display2()
+        // document.write("here we are displaying 'D' outside the function using const keyword: ",D,"<br>");
+
+
+
+
+        //  ====Global Scope====
+        
+        // creating the variables as global using var keyword
+
+        // Global Variables using inside and outside the block
+        var g=1111, h=1112; // global variables
+        {
+            document.write("global variable 'g' using inside the block: ",g,"<br>");
+            document.write("global variable 'h' using inside the block: ",h,"<br>");
+        }
+        document.write("global variable 'g' using outside the block: ",g,"<br>");
+        document.write("global variable 'h' using outside the block: ",h,"<br>");
+        document.write("<br><br>");
+
+        // Global Variables using inside and outside the function
+        var i=1113, j=1114; // global variables
+        function display3(){
+            document.write("global variable 'i' using inside the function: ",i,"<br>");
+            document.write("global variable 'j' using inside the function: ",j,"<br>");
+        }
+        display3()
+        document.write("global variable 'i' using outside the function: ",i,"<br>");
+        document.write("global variable 'j' using outside the function: ",j,"<br>");
+        document.write("<br><br>");
+
+        // Global Variables creating the variables as global using let keyword
+
+        let k=1115, l=1116; // global variables
+        {
+            document.write("global variable 'k' using inside the block using let keyword: ",k,"<br>");
+            document.write("global variable 'l' using inside the block using let keyword: ",l,"<br>");
+        }
+        document.write("global variable 'k' using outside the block using let keyword: ",k,"<br>");
+        document.write("global variable 'l' using outside the block using let keyword: ",l,"<br>");
+        document.write("<br><br>");
+
+        // Global Variables using inside and outside the function
+        var m=1117, n=1118; // global variables
+        function display4(){
+            document.write("global variable 'm' using inside the function using let keyword: ",m,"<br>");
+            document.write("global variable 'n' using inside the function using let keyword: ",n,"<br>");
+        }
+        display4()
+        document.write("global variable 'm' using outside the function using let keyword: ",m,"<br>");
+        document.write("global variable 'n' using outside the function using let keyword: ",n,"<br>");
+        document.write("<br><br>");
+
+
+        // Global Variables creating the variables as global using const keyword
+
+        const O=1115, P=1116; // global variables
+        {
+            document.write("global variable 'O' using inside the block using const keyword: ",O,"<br>");
+            document.write("global variable 'P' using inside the block using const keyword: ",P,"<br>");
+        }
+        document.write("global variable 'O' using outside the block using const keyword: ",O,"<br>");
+        document.write("global variable 'P' using outside the block using const keyword: ",P,"<br>");
+        document.write("<br><br>")
+
+        // Global Variables using inside and outside the function
+        const Q=1117, R=1118; // global variables
+        function display5(){
+            document.write("global variable 'Q' using inside the function using const keyword: ",Q,"<br>");
+            document.write("global variable 'R' using inside the function using const keyword: ",R,"<br>");
+        }
+        display5()
+        document.write("global variable 'Q' using outside the function using const keyword: ",Q,"<br>");
+        document.write("global variable 'R' using outside the function using const keyword: ",R,"<br>");
+
+
+    </script>
+</body>
+</html>

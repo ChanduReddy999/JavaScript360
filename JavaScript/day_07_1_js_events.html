@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <!-- JS -->
+    <script>
+        // onclick event
+        function display(){
+            alert("You have clicked the button");
+        }
+
+        // ondblclick event
+        function display1(){
+            alert("You have doubled clicked the button");
+        }
+
+        // onfocus event
+        function display2(){
+            alert("You are focused");
+        }
+
+        // onload event
+        function display3(){
+            alert("page is loading");
+        }
+
+        // onresize event
+        function display4(){
+            alert("body is resizing");
+        }
+
+        // oncut event
+        function display5(){
+            alert("You have cut the text");
+        }
+
+        // oncopy event
+        function display6(){
+            alert("You have copied the text");
+        }
+
+        // onpaste event
+        function display7(){
+            alert("You have pasted the text");
+        }
+
+        // onmouseenter event
+        function display8(){
+            alert("Your mouse has entered");
+        }
+
+        // onmouseover event
+        function display9(){
+            alert("Your mouse was over the content");
+        }
+
+        // onmouseleave event
+        function display10(){
+            alert("Your mouse was leaved the content");
+        }
+
+        // onkeyup event
+        function display11(){
+            alert("you pressed a key");
+        }
+
+        // onkeydown event
+        function display12(){
+            alert("you down a key");
+        }
+
+        // onsubmit event
+        function display13(){
+            alert("You have submited the form");
+        }
+    </script>
+</head>
+<body onload="display3()" onresize="display4()">
+
+    <form action="" onsubmit="display13()">
+
+    <p onclick="display()">hey click me once</p>
+    <input type="button" value="clickme" onclick="display()" name="" id=""><br><br>
+
+    <input type="button" value="clickhere" ondblclick="display1()" name="" id=""><br><br>
+
+    <input type="text" onfocus="display2()" name="" id=""><br><br>
+
+    <input type="text" value="Chandu" oncut="display5()" name="" id=""><br><br>
+
+    <input type="text" value="Reddy" oncopy="display6()" name="" id=""><br><br>
+
+    <input type="text" onpaste="display7()" name="" id=""><br><br> 
+
+    <input type="text" onmouseenter="display8()" name="" id=""><br><br>
+    
+    <input type="text" onmouseover="display9()" name="" id=""><br><br>
+
+    <input type="text" onmouseleave="display10()" name="" id=""><br><br>
+    
+    <input type="text" onkeyup="display11()" name="" id=""><br><br>
+    
+    <input type="text" onkeydown="display12()" name="" id=""><br><br>
+
+    <input type="submit" value="Submit" name="" id=""><br><br>
+
+    
+    </form>
+
+
+</body>
+</html>

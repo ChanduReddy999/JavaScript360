@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Objects</title>
+</head>
+<body>
+    <!-- alert() function -->
+    <!-- prompt() function -->
+    <!-- confirm() function -->
+    <!-- setTimeOut() function -->
+    <!-- open() function -->
+
+    <script>
+        alert("Hello, You opened the webpage");
+
+        var name;
+        name=prompt("Enter your name");
+        document.write("Hello ",name,"<br>");
+
+        var result=confirm("Do you want to delete the file");
+        if(result==true){
+            document.write("The file is deleted","<br>");
+        }
+        else{
+            document.write("The file is not deleted","<br>");
+        }
+
+
+        setTimeout(function(){
+            alert("come after seven seconds","<br>");
+            document.write("come after seven seconds","<br>");
+        },7000)
+
+        open("https://www.google.com");
+    </script>
+</body>
+</html>

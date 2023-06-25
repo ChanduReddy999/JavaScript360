@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <!-- JS -->
+    <script>
+
+        // toUpperCase
+        document.write("string is converted into upper case using toUpperCase()","<br>");
+        var a="Hello Chandu";
+        a=a.toUpperCase();
+        document.write(a,"<br>");
+        document.write("<br><br>");
+
+
+        // toLowerCase
+        document.write("string is converted into lower case using toLowerCase()","<br>");
+        var b="Hello Chandu Sir";
+        document.write(b.toLowerCase(),"<br>");
+        document.write("<br><br>");
+
+
+
+        // charAt()
+        document.write("obtaining the character at given index using charAt()","<br>");
+        var c="Hello 360";
+        document.write(c.charAt(0),"<br>");
+        document.write(c.charAt(3),"<br>");
+        document.write(c.charAt(6),"<br>");
+        document.write(c.charAt(1),"<br>");
+        document.write("<br><br>");
+
+
+
+        // indexOf()
+        document.write("using indexOf() to find the first occurence of character in the string","<br>");
+        var d="Hello Chandu Sir";
+        document.write(d.indexOf('d'),"<br>");
+        document.write(d.indexOf('Chandu'),"<br>");
+        document.write(d.indexOf('s')," if the element is not found","<br>");
+        document.write(d.indexOf('S'),"<br>");
+        document.write("<br><br>");
+
+
+
+        // lastIndexOf()
+        document.write("using lastIndexOf() to find the last occurence of character in the string","<br>");
+        var e="Hello Chandu Sir, We welcome you to the Party";
+        document.write(e.lastIndexOf('l'),"<br>");
+        document.write(e.lastIndexOf('Chandu'),"<br>");
+        document.write(e.lastIndexOf('e'),"<br>");
+        document.write(e.lastIndexOf('z')," if the element is not found","<br>");
+        document.write("<br><br>");
+
+
+
+        // replace()
+        document.write("using replace() to replace the first occurence of string in the string","<br>");
+        var f="Hello Chandu Reddy";
+        f=f.replace("Hello","Namaste");
+        document.write(f,"<br>");
+        f=f.replace("Reddy","Reddy Vadala");
+        document.write(f,"<br>");
+
+        var g="Hello Chandu sir";
+        document.write(g.replace("Hello","Reddy"),"<br>");
+        document.write(g.replace("Hello","Namaste"),"<br>");
+        document.write("<br><br>");
+
+
+
+        // string concatination
+        document.write("string concatination using + or , and also using concat() method","<br>");
+        var h="Hello";
+        var i="Sir";
+        document.write(h+i+"<br>");
+        document.write(h,i,"<br>");
+        document.write(h.concat(i),"<br>");
+        document.write("<br><br>");
+
+
+
+        // slice method
+        document.write("using slice method to obtain the data from the string","<br>");
+        var j="Hello Chandu Sir";
+        document.write(j.slice(2,7),"<br>");
+        document.write(j.slice(4,12),"<br>");
+        document.write(j.slice(6,12),"<br>");
+        document.write(j.slice(-12,-1),"<br>");
+        document.write(j.slice(-12),"<br>");           
+        document.write("<br><br>");
+
+
+        
+        // substring
+        document.write("using substring() to get substring from the string","<br>");
+        var k="Hello Reddy";
+        document.write(k.substring(3,11),"<br>");
+        document.write(k.substring(3,5),"<br>");
+        document.write(k.substring(3,4),"<br>");
+        document.write("<br><br>");
+
+
+        // trim method
+        document.write("using trim method to remove unwanted space at the start and end of the string","<br>");
+        var l="    Hello Chandu    ";
+        document.write(l,"<br>");
+        document.write("the length of 'l' is: ",l.length,"<br>");
+        var m=l.trim()
+        document.write(m,"<br>");
+        document.write("the length of 'm' is: ",m.length,"<br>");
+        document.write("<br><br>");
+
+
+    </script>
+</body>
+</html>
