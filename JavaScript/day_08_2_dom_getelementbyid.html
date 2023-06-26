@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <!-- JS -->
+    <script>
+        // getElementById()
+        function display(){
+            var firstname=document.getElementById("first").value;
+            var lastname=document.getElementById("last").value;
+            var email=document.getElementById("mail").value;
+            var password=document.getElementById("pass").value;
+            document.write("Firstname: ",firstname,"<br>");
+            document.write("Lastname: ",lastname,"<br>");
+            document.write("Email: ",email,"<br>");
+            document.write("Password: ",password,"<br>");
+        }
+
+        // get the form data to html using javascript
+        document.getElementById("id1").value=firstname;
+        document.getElementById("id2").value=lastname;
+        document.getElementById("id3").value=email;
+        document.getElementById("id4").value=password;
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Firstname: <span id="id1"></span></h1>
+        <h1>Lastname: <span id="id2"></span></h1>
+        <h1>Email: <span id="id3"></span></h1>
+        <h1>Password: <span id="id4"></span></h1>
+    </div>
+    <div>
+        <form action="">
+            <input type="text" name="" id="first" placeholder="Enter Firstname"><br><br>
+            <input type="text" name="" id="last" placeholder="Enter Lastname"><br><br>
+            <input type="email" name="" id="mail" placeholder="Enter Email"><br><br>
+            <input type="password" name="" id="pass" placeholder="Enter Password"><br><br>
+            <input type="submit" value="Send" onclick="display()" name="" id="send">
+            <input type="reset" value="Clear" name="" id="clear">
+        </form>
+    </div>
+</body>
+</html>
