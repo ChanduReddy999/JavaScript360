@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM quertSelector</title>
+    <script>
+        function display(){
+            document.querySelector("#firstdiv").style.width="300px";
+            document.querySelector("#firstdiv").style.height="100px";
+            document.querySelector("#firstdiv").style.backgroundColor="aqua";
+        }
+        function display1(){
+            document.querySelector("p").style.width="300px";
+            document.querySelector("p").style.height="100px";
+            document.querySelector("p").style.backgroundColor="red";
+        }
+        function display2(){
+            document.querySelector(".firstclass").style.width="300px";
+            document.querySelector(".firstclass").style.height="100px";
+            document.querySelector(".firstclass").style.backgroundColor="blue";
+        }
+        // function display3(){
+        //     document.querySelectorAll(".secondclass").style.width="300px";
+        //     document.querySelectorAll(".secondclass").style.backgroundColor="blue";
+        //     document.querySelectorAll(".secondclass").style.height="100px";
+        // }
+    </script>
+</head>
+<body>
+    <!-- working with queryselector with id -->
+    <div id="firstdiv">
+
+    </div>
+    <input type="button" value="Change" onclick="display()" name="" id=""><br><br>
+
+
+    <!-- working queryselector with tag name -->
+    <p>
+
+    </p>
+    <input type="button" value="Changes" onclick="display1()" name="" id=""><br><br>
+
+
+    <!-- working queryselector with class -->
+    <div class="firstclass">
+
+    </div>
+    <input type="button" value="Send" onclick="display2()" name="" id="">
+
+    <!-- working with queryselectorall -->
+    <!-- <div class="secondclass">
+
+    </div>
+    <div class="secondclass">
+
+    </div>
+    <input type="button" value="Send" onclick="display3()" name="" id=""> -->
+</body>
+</html>

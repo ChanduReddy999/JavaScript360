@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM getElementByClassName</title>
+    <script>
+        function display(){
+            var inputdata=document.getElementsByClassName("inputs");
+            first=inputdata[0].value;
+            last=inputdata[1].value;
+            mail=inputdata[2].value;
+            pass=inputdata[3].value;
+
+            document.write("Firstname: ",first,"<br>");
+            document.write("Lastname: ",last,"<br>");
+            document.write("Email: ",mail,"<br>");
+            document.write("Password: ",pass,"<br>");
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="" id="" class="inputs" placeholder="Enter Your Firstname"><br><br>
+        <input type="text" name="" id="" class="inputs" placeholder="Enter Your Lastname"><br><br>
+        <input type="email" name="" id="" class="inputs" placeholder="Enter Your Email"><br><br>
+        <input type="password" name="" id="" class="inputs" placeholder="Enter Your Password"><br><br>
+        <input type="button" value="addChanges" onclick="display()" name="" id="">
+        <input type="reset" value="Clear" name="" id="">
+    </form>
+</body>
+</html>
