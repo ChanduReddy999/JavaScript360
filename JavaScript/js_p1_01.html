@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Project 1: Simple Calculator using form</title>
+    <script>
+        function add(){
+            var number1=document.getElementById("num1").value;
+            var number2=document.getElementById("num2").value;
+            result=parseInt(number1)+parseInt(number2);
+            document.getElementById("result").value=result;
+
+            // document.getElementById("result").value=parseInt(number1)+parseInt(number2);
+        }
+        function sub(){
+            var number1=document.getElementById("num1").value;
+            var number2=document.getElementById("num2").value;
+            document.getElementById("result").value=parseInt(number1)-parseInt(number2);
+        }
+        function mul(){
+            var number1=document.getElementById("num1").value;
+            var number2=document.getElementById("num2").value;
+            document.getElementById("result").value=parseInt(number1)*parseInt(number2);
+        }
+        function div(){
+            var number1=document.getElementById("num1").value;
+            var number2=document.getElementById("num2").value;
+            document.getElementById("result").value=parseInt(number1)/parseInt(number2);
+        }
+        function mod(){
+            var number1=document.getElementById("num1").value;
+            var number2=document.getElementById("num2").value;
+            document.getElementById("result").value=parseInt(number1)%parseInt(number2);
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="" id="result" placeholder="result" readonly><br>
+        <input type="text" name="" id="num1">
+        <input type="text" name="" id="num2"><br>
+        <input type="button" value="+" onclick="add()" name="" id="">
+        <input type="button" value="-" onclick="sub()" name="" id="">
+        <input type="button" value="*" onclick="mul()" name="" id="">
+        <input type="button" value="/" onclick="div()" name="" id="">
+        <input type="button" value="%" onclick="mod()" name="" id="">
+    </form>
+</body>
+</html>

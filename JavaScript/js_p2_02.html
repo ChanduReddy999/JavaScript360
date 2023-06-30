@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Project 2: Using Form and Table</title>
+</head>
+<body>
+    <h2>Project Jaanu</h2>
+    <form action="" id="mainForm">
+        <label for="first">Firstname</label>
+        <input type="text" name="first" id="first" placeholder="Enter Your Firstname: " required><br><br>
+        <label for="last">Lastname</label>
+        <input type="text" name="last" id="last" placeholder="Enter Your Lastname: " required><br><br>
+        <label for="mail">Email</label>
+        <input type="email" name="mail" id="mail" placeholder="Enter Your Email: " required><br><br>
+        <label for="mobile">MobileNo.</label>
+        <input type="tel" name="mobile" id="mobile" placeholder="Enter Your Mobile: " required><br><br> 
+        <label for="pin">Pincode</label>
+        <input type="number" name="pin" id="pin" placeholder="Enter Your Pincode: " required><br><br>  
+        <label for="loc">Location</label>
+        <input type="text" name="loc" id="loc" placeholder="Enter Your Location: " required><br><br>
+        <label for="dept">Department_Name</label>
+        <input type="text" name="dept" id="dept" placeholder="Enter Your Department_Name: " required><br><br>  
+        <label for="tech">Technology</label>
+        <input type="text" name="tech" id="tech" placeholder="Enter Your Technology: " required><br><br>
+        <label for="project">Project_Name</label>
+        <input type="text" name="project" id="project" placeholder="Enter Your Project Name: " required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <br><br>
+    <h2>Details in Table form</h2>
+    <table id="tableData" border="2px" bgcolor="aqua" cellpadding="2px" cellspacing="4px">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>MobileNo.</th>
+            <th>Pincode</th>
+            <th>Location</th>
+            <th>Department_Name</th>
+            <th>Technology</th>
+            <th>Project_Name</th>
+        </tr>
+    </table>
+
+    <script>
+        const form=document.getElementById("mainForm");
+        const table=document.getElementById("tableData");
+
+        form.addEventListener("submit", function(e){
+            e.preventDefault();
+
+            const firstname=document.getElementById("first").value;
+            const lastname=document.getElementById("last").value;
+            const email=document.getElementById("mail").value;
+            const mobileno=document.getElementById("mobile").value;
+            const pincode=document.getElementById("pin").value;
+            const location=document.getElementById("loc").value;
+            const departmentname=document.getElementById("dept").value;
+            const technology=document.getElementById("tech").value;
+            const projectname=document.getElementById("project").value;
+
+            const newRow=table.insertRow();
+
+            const firstnameCell=newRow.insertCell();
+            firstnameCell.innerHTML=firstname;
+            
+            const lastnameCell=newRow.insertCell();
+            lastnameCell.innerHTML=lastname;
+            
+            const emailCell=newRow.insertCell();
+            emailCell.innerHTML=email;
+            
+            const mobilenoCell=newRow.insertCell();
+            mobilenoCell.innerHTML=mobileno;
+            
+            const pincodeCell=newRow.insertCell();
+            pincodeCell.innerHTML=pincode;
+            
+            const locationCell=newRow.insertCell();
+            locationCell.innerHTML=location;
+            
+            const departmentnameCell=newRow.insertCell();
+            departmentnameCell.innerHTML=departmentname;
+            
+            const technologyCell=newRow.insertCell();
+            technologyCell.innerHTML=technology;
+            
+            const projectnameCell=newRow.insertCell();
+            projectnameCell.innerHTML=projectname;
+            
+
+            form.reset();
+        });
+    </script>
+</body>
+</html>

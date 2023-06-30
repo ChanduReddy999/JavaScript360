@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validations in form</title>
+    <script>
+        // reading the form data
+        function validate(){
+            var firstname=document.getElementById("first").value;
+            var middlename=document.getElementById("middle").value;
+            var lastname=document.getElementById("last").value;
+            var email=document.getElementById("mail").value;
+            var confirmemail=document.getElementById("cmail").value;
+            var password=document.getElementById("pass").value;
+            var confirmpassword=document.getElementById("cpass").value;
+
+            if (email==confirmemail && password==confirmpassword){
+                alert("given data is valid");
+            }
+            else{
+                alert("given data is invalid");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+    <!-- <label for="" id="">Firstname</label>     -->
+    <input type="text" name="" id="first" placeholder="Enter Your Firstname" required maxlength="30"><br>
+    <!-- <label for="" id="">Middlename</label>     -->
+    <input type="text" name="" id="middle" placeholder="Enter Your Middlename" required maxlength="30"><br>
+    <!-- <label for="" id="">Lastname</label>     -->
+    <input type="text" name="" id="last" placeholder="Enter Your Lastname" required maxlength="30"><br>
+    <!-- <label for="" id="">Email</label>     -->
+    <input type="email" name="" id="mail" placeholder="Enter Your Email" required><br>
+    <!-- <label for="" id="">Confirm Email</label>     -->
+    <input type="email" name="" id="cmail" placeholder="Confirm Your Email" required><br>
+    <!-- <label for="" id="">Password</label>     -->
+    <input type="password" name="" id="pass" placeholder="Enter Your Password" required  minlength="10"><br>
+    <!-- <label for="" id="">Confirm Password</label>     -->
+    <input type="password" name="" id="cpass" placeholder="Confirm Your Password" required minlength="10"><br>
+    <input type="submit" value="Submit" onclick="validate()" name="" id="">
+    <input type="reset" value="Clear" name="" id="">
+    </form>
+</body>
+</html>

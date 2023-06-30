@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Project 2: Using Form and Table</title>
+    <script>
+        function display(){
+            var firstname=document.getElementById("first").value;
+            var lastname=document.getElementById("last").value;
+            var email=document.getElementById("mail").value;
+            var mobileno=document.getElementById("mobile").value;
+            var pincode=document.getElementById("pin").value;
+            var location=document.getElementById("loc").value;
+            var departmentname=document.getElementById("dept").value;
+            var technology=document.getElementById("tech").value;
+            var projectname=document.getElementById("project").value;
+
+            document.getElementById("one").innerText=firstname;
+            document.getElementById("two").innerText=lastname;
+            document.getElementById("three").innerText=email;
+            document.getElementById("four").innerText=mobileno;
+            document.getElementById("five").innerText=pincode;
+            document.getElementById("six").innerText=location;
+            document.getElementById("seven").innerText=departmentname;
+            document.getElementById("eight").innerText=technology;
+            document.getElementById("nine").innerText=projectname;
+        }    
+    </script>
+</head>
+<body>
+    <h2>Project Jaanu</h2>
+    <form action="" id="mainForm">
+        <label for="first">Firstname</label>
+        <input type="text" name="first" id="first" placeholder="Enter Your Firstname: " required><br><br>
+        <label for="last">Lastname</label>
+        <input type="text" name="last" id="last" placeholder="Enter Your Lastname: " required><br><br>
+        <label for="mail">Email</label>
+        <input type="email" name="mail" id="mail" placeholder="Enter Your Email: " required><br><br>
+        <label for="mobile">MobileNo.</label>
+        <input type="tel" name="mobile" id="mobile" placeholder="Enter Your Mobile: " required><br><br> 
+        <label for="pin">Pincode</label>
+        <input type="number" name="pin" id="pin" placeholder="Enter Your Pincode: " required><br><br>  
+        <label for="loc">Location</label>
+        <input type="text" name="loc" id="loc" placeholder="Enter Your Location: " required><br><br>
+        <label for="dept">Department_Name</label>
+        <input type="text" name="dept" id="dept" placeholder="Enter Your Department_Name: " required><br><br>  
+        <label for="tech">Technology</label>
+        <input type="text" name="tech" id="tech" placeholder="Enter Your Technology: " required><br><br>
+        <label for="project">Project_Name</label>
+        <input type="text" name="project" id="project" placeholder="Enter Your Project Name: " required><br><br>
+    </form>
+    
+    <br><br>
+    <table id="tableData" border="2px" bgcolor="aqua" cellpadding="2px" cellspacing="4px">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>MobileNo.</th>
+            <th>Pincode</th>
+            <th>Location</th>
+            <th>Department_Name</th>
+            <th>Technology</th>
+            <th>Project_Name</th>
+        </tr>
+        <tr>
+            <td id="one"></td>
+            <td id="two"></td>
+            <td id="three"></td>
+            <td id="four"></td>
+            <td id="five"></td>
+            <td id="six"></td>
+            <td id="seven"></td>
+            <td id="eight"></td>
+            <td id="nine"></td> 
+        </tr>
+    </table>
+    <input type="submit" value="Send" onclick="display()" name="" id="send">
+</body>
+</html>
